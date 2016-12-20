@@ -1,0 +1,146 @@
+
+.body {
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url('bg.png')
+}
+
+.targetInfo {
+    width: 100%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 22px;
+    background-color: lavender;
+    animation-name: bounceIn;
+    animation-duration: 1.5s;
+    left: 65px;
+}
+
+.targetTitle {
+	text-decoration: underline;
+}
+
+.targetNumber {
+	font-family: 'Fredericka the Great', cursive;
+	font: bold;
+	font-size: 45px;
+	margin-top: -25px;
+	
+}
+
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+    background-color: white;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+    
+  }
+  100% {
+    transform: scale(1);
+    background-color: lavender;
+  }
+}
+
+.title {
+	text-align: center ;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 77px;
+	animation-duration: 1.5s;
+	animation-name: bounceIn;
+	background-color: lavender;
+}
+
+.instructions {
+	width: 100%;
+	font-family: 'Josefin Slab', serif;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	width: 60em;
+	white-space: nowrap;
+}
+
+p.line1 {
+	animation-duration: 9s;
+	animation-name: fadeIn;
+}
+
+p.line2 {
+	animation-duration: 10s;
+	animation-name: fadeIn;
+}
+
+p.line3 {
+	animation-duration: 15s;
+	animation-name: fadeIn;
+}
+
+p.line4 {
+	animation-duration: 20s;
+	animation-name: fadeIn;
+}
+
+p.line5 {
+	animation-duration: 25s;
+	animation-name: fadeIn;
+}
+ 
+@keyframes fadeIn {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.redCrystal {
+	float: left;
+}
+
+.blueCrystal {
+	float: left;
+}
+
+.yellowCrystal {
+	float: left;
+}
+
+.greenCrystal {
+	float: left;
+}
+
+.wins {
+font-family: 'Josefin Slab', serif;
+font-size: 22px;
+float: right;
+}
+
+.loss {
+font-family: 'Josefin Slab', serif;
+font-size: 22px;
+float: left;
+}
+
+.crystalHolder {
+	width: 350px;
+	margin-top: -150px;
+	margin: auto;
+}
+
+.totalScore {
+	width: 185px;
+	text-align: center;
+	float: left;
+}
